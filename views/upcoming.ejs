@@ -1,0 +1,48 @@
+<html>
+    
+<head>
+<title>https://www.GamiFy.com</title>
+    <link rel="stylesheet" type="text/css" href="/Gamify.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+    
+    
+<body>
+    <header>
+        <%- include('./header') %>
+        <div class="header-div">
+            <ul>
+                <li><a class="header-a" href="/" target="_self"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li><a class="header-a" href="/product" target="_self"><i class="fas fa-gamepad"></i>&nbsp;Product</a></li>
+                <li class="current-page"><a class="header-a" href="/upcome" target="_self">🎁&nbsp;Upcoming</a></li>
+                <li><a class="header-a" href="/about" target="_self">☎&nbsp;About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <span><video src="/video/v1.mp4" autoplay="" muted="" loop=""></video></span>
+        <div class="animation">
+            <div>
+                <span><video src="/video/v1.mp4" autoplay="" muted="" loop=""></video></span>
+                <span><video src="/video/v1.mp4" autoplay="" muted="" loop=""></video></span>
+                <span><video src="/video/v1.mp4" autoplay="" muted="" loop=""></video></span>
+                <span><video src="/video/v1.mp4" autoplay="" muted="" loop=""></video></span>
+                <span><video src="/video/v1.mp4" autoplay="" muted="" loop=""></video></span>
+                <span><video src="/video/v1.mp4" autoplay="" muted="" loop=""></video></span>
+            </div>
+        </div>
+    </section>
+        
+    <div class="game-page up" id="so">
+        <% for(let upcome of upcomes){ %> 
+            <div class="gamediv">
+                <div><img src="/upcome/<%= upcome.imagename %>"></div>
+                <div class="game-name-title"><center><%= upcome.gamename %> </center></div>
+            </div>
+        <%  }%> 
+    </div>
+</body>
+<script src="Gamify.js"></script>
+
+</html>

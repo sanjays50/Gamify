@@ -1,0 +1,98 @@
+<html>
+    
+<head>
+<title>https://www.GamiFy.com</title>
+    <link rel="stylesheet" type="text/css" href="/Gamify.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+    
+    
+<body>
+    <header>
+        <%- include('./header') %>
+        <div class="header-div">
+            <ul >
+                <li><a class="header-a" href="/" target="_self"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li class="current-page"><a class="header-a" href="/product" target="_self"><i class="fas fa-gamepad"></i>&nbsp;Product</a></li>
+                <li><a class="header-a" href="/upcome" target="_self">🎁&nbsp;Upcoming</a></li>
+                <li><a class="header-a" href="/about" target="_self">☎&nbsp;About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="slide-bar">
+        <div class="slide-container">
+        <div class="slide-left" onclick="ps(-1)"><i class="fas fa-less-than"></i></div>
+        <div class="slide-right" onclick="ps(1)"><i class="fas fa-greater-than"></i></div>
+        <div class="slidebar-img"><img src="/slide/b1.jpg"></div>
+        <div class="slidebar-img"><img src="/slide/b2.jpg"></div>
+        <div class="slidebar-img"><img src="/slide/b3.jpg"></div>
+        <div class="slidebar-img"><img src="/slide/b4.jpg"></div>
+        <div class="slidebar-img"><img src="/slide/b5.jpg"></div>
+        </div>
+        <div id="dot-simble"></div>
+    </div>
+    <hr class="section-divider-1" style="margin-bottom: 25px;">
+        
+    <div class="b2">
+        <div><i class="fab fa-playstation"></i><br>PlayStation</div>
+        <div class="act"><i class="fab fa-xbox" style="margin-top: 3px;"></i><br>Xbox</div>
+        <div><i class="fas fa-laptop" style="margin-top: 4px;"></i></i><br>PC</div>
+        <div><i class="fab fa-android"></i><br>Android</div>
+        </div>
+        <div class="mnct">
+            
+        <div class="b3">
+            <% for(let psgame of psgames){ %> 
+                <div>
+                    <div class="ps"><i class="fab fa-playstation"><%= psgame.gametype %></i></div>
+                    <div><img src="/games/<%= psgame.image %>"></div>
+                    <div><center><%= psgame.gamename %> <br><%= psgame.edition %></center></div>
+                    <div><center><%= psgame.price %></center></div>
+                    <div onclick="payment()"><center><button class="paybtn">Buy</button></center></div>
+                </div>
+            <%  }%>  
+        </div>
+            
+        <div class="b3a" id="so">
+            <% for(let xgame of xgames){ %> 
+                <div>
+                    <div class="xs"><i class="fab fa-xbox"><%= xgame.gametype %></i></div>
+                    <div><img src="/games/<%= xgame.image %>"></div>
+                    <div><center><%= xgame.gamename %> <br><%= xgame.edition %></center></div>
+                    <div><center><%= xgame.price %></center></div>
+                    <div onclick="payment()"><center><button class="paybtn">Buy</button></center></div>
+                </div>
+            <%  }%>  
+        </div>
+          
+        <div class="b3b">
+            <% for(let pcgame of pcgames){ %> 
+                <div>
+                    <div class="ls"><i class="fas fa-laptop"><%= pcgame.gametype %></i></div>
+                    <div><img src="/games/<%= pcgame.image %>"></div>
+                    <div><center><%= pcgame.gamename %> <br><%= pcgame.edition %></center></div>
+                    <div><center><%= pcgame.price %></center></div>
+                    <div onclick="payment()"><center><button class="paybtn">Buy</button></center></div>
+                </div>
+            <%  }%>  
+        </div>
+        
+        <div class="b3c">
+            <% for(let ansgame of ansgames){ %> 
+                <div>
+                    <div class="ans"><i class="fab fa-android"><%= ansgame.gametype %></i></div>
+                    <div><img src="/games/<%= ansgame.image %>"></div>
+                    <div><center><%= ansgame.gamename %> <br><%= ansgame.edition %></center></div>
+                    <div><center><%= ansgame.price %></center></div>
+                    <div onclick="payment()"><center><button class="paybtn">Buy</button></center></div>
+                </div>
+            <%  }%>
+        </div>
+        </div>
+    </div>
+        
+    </body>
+<script src="/Gamify.js"></script>
+
+</html>
