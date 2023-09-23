@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(15, 10, 152);
+    color: aliceblue;
+}
+.container {
+    margin-top: 2vh;
+}
+
+#dv1 {
+    background-color: aqua;
+    text-align: center;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+}
+
+#dv2 {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+span {
+    padding: 0 1vh;
+}
+
+#easy {
+    background-color: aquamarine;
+}
+
+#easy:hover,
+#hard:hover {
+    background-color: aquamarine;
+}
+
+#dv22 {
+    visibility: hidden;
+}
+#hard1{
+    visibility: hidden;
+}
+#dv21:hover,
+span:hover,
+.square:hover {
+    cursor: pointer;
+}
+
+.square {
+    background-color: red;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+.dv3 {
+    margin-top: 3%;
+}
+.webname{
+    z-index: 3;
+    background-color: black;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 86% 14%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wname{
+    font-size: 2.2rem;
+    font-family:fantasy;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 5px;
+    text-align:center;
+    color: rgb(88, 124, 4);
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: 600;
+}
+.wname a{
+    text-decoration: none;
+    color: rgb(88, 124, 4);
+}

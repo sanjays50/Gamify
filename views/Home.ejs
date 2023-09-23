@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>https://www.GamiFy.com</title>
+    <link rel="stylesheet" type="text/css" href="Gamify.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+
+<body>
+    <header>
+        <%- include('./header') %>
+        <div class="header-div">
+            <ul >
+                <li class="current-page"><a class="header-a" href="/" target="_self"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li><a class="header-a" href="/product" target="_self"><i class="fas fa-gamepad"></i>&nbsp;Product</a></li>
+                <li><a class="header-a" href="/upcome" target="_self">🎁&nbsp;Upcoming</a></li>
+                <li><a class="header-a" href="/about" target="_self">☎&nbsp;About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="slide-bar">
+        <div class="slide-container">
+        <div class="slide-left" onclick="ps(-1)"><i class="fas fa-less-than"></i></div>
+        <div class="slide-right" onclick="ps(1)"><i class="fas fa-greater-than"></i></div>
+        <div class="slidebar-img"><img src="./slide/b1.jpg"></div>
+        <div class="slidebar-img"><img src="./slide/b2.jpg"></div>
+        <div class="slidebar-img"><img src="./slide/b3.jpg"></div>
+        <div class="slidebar-img"><img src="./slide/b4.jpg"></div>
+        <div class="slidebar-img"><img src="./slide/b5.jpg"></div>
+        </div>
+        <div id="dot-simble"></div>
+    </div>
+    <hr class="section-divider-1"> -->
+    <div class="game-page" id="so">
+        <div class="gamediv">
+            <div><img src="./online/sudoku.jpg"></div>
+            <div class="game-name-title"><center>Sudoku</center></div>
+            <a href="/soduko" target="_self"><div><center><button class="play-btn">PLAY</button></center></div></a>
+        </div>
+        
+        <div class="gamediv">
+            <div><img src="./online/space_shooter.png"></div>
+            <div class="game-name-title"><center>Space Shooter</center></div>
+            <a href="/canvas" target="_self"><div><center><button class="play-btn">PLAY</button></center></div></a>
+        </div>
+        
+        <div class="gamediv">
+            <div><img src="./online/color_guess.webp"></div>
+            <div class="game-name-title"><center>Color Guess</center></div>
+            <a href="/color" target="_self"><div><center><button class="play-btn">PLAY</button></center></div></a>
+        </div>
+    </div>
+</body>
+<script src="Gamify.js"></script>
+</html> 
