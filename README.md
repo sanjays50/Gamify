@@ -6,17 +6,17 @@
 
 
 ## Deployment
-For Live Demo visit
+- For Live Demo visit
 
 [https://gamify-28ld.onrender.com](https://gamify-28ld.onrender.com)
 ## Installation
 
-After download or clone run ```npm install ```  to install all the dependancies. also do not forget to rename .``` env.example ``` into ``` .env ``` an put all creadentials.
+- After download or clone run ```npm install ```  to install all the dependancies. also do not forget to rename .``` env.example ``` into ``` .env ``` an put all creadentials.
 
     
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+- To run this project, you will need to add the following environment variables to your .env file
 
 `MONGO_URL`
 
@@ -25,25 +25,25 @@ To run this project, you will need to add the following environment variables to
 
 ## Run Locally
 
-Clone the project
+- Clone the project
 
 ```bash
   git clone https://github.com/sanjays50/Gamify
 ```
 
-Go to the project directory
+- Go to the project directory
 
 ```bash
   cd Gamify
 ```
 
-Install dependencies
+- Install dependencies
 
 ```bash
   npm install
 ```
 
-Start the server
+- Start the server
 
 ```bash
   npm start
@@ -71,12 +71,12 @@ Start the server
 
 ## Lessons Learned
 
-I have acquired the skills to develop online browser games and create a real-time customer-seller interaction e-commerce platform.
+- I have acquired the skills to develop online browser games and create a real-time customer-seller interaction e-commerce platform.
 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at sanjayshekhawat778@gmail.com
+- If you have any feedback, please reach out to us at sanjayshekhawat778@gmail.com
 
 
 ## Demo
