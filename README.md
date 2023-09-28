@@ -6,7 +6,7 @@
 
 
 ## Deployment
-- For Live Demo visit
+- For Live Demo visit.
 
 [https://gamify-28ld.onrender.com](https://gamify-28ld.onrender.com)
 ## Installation
